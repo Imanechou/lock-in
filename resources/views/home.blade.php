@@ -13,7 +13,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="{{ asset('fronts/images/favicon.png') }}" type="">
 
-    <title> Finexo </title>
+    <title> Lock-In </title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('fronts/css/bootstrap.css') }}" />
@@ -40,11 +40,11 @@
 
     <div class="hero_area">
 
-        <div class="hero_bg_box">
+        <!--<div class="hero_bg_box">
             <div class="bg_img_box">
                 <img src="{{ asset('fronts/images/hero-bg.png') }}" alt="">
             </div>
-        </div>
+        </div> -->
 
         <!-- header section strats -->
         <header class="header_section">
@@ -118,15 +118,15 @@
                                 <div class="col-md-6 ">
                                     <div class="detail-box">
                                         <h1>
-                                            TIME IS <br>
-                                            Important
+                                            Manage Your <br>
+                                            Time
                                         </h1>
                                         <p>
-                                            for your big next step, so watch your steps
+                                            Track your work and optimize your productivity
                                         </p>
                                         <div class="btn-box">
                                             <a href="" class="btn1">
-                                                Start Now
+                                                Get Started
                                             </a>
                                         </div>
                                     </div>
@@ -145,25 +145,22 @@
                                 <div class="col-md-6 ">
                                     <div class="detail-box">
                                         <h1>
-                                            Crypto <br>
-                                            Currency
+                                            Stay Organized, <br>
+                                            Stay Productive
                                         </h1>
                                         <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam
-                                            fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat
-                                            molestias, veniam, vel architecto veritatis delectus repellat modi impedit
-                                            sequi.
+                                            Simplify your workflow with our intuitive tools
                                         </p>
                                         <div class="btn-box">
                                             <a href="" class="btn1">
-                                                Read More
+                                                Join Now
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="img-box">
-                                        <img src="{{ asset('fronts/images/image.png') }}" alt="">
+                                        <img src="{{ asset('fronts/images/image2.webp') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -175,25 +172,22 @@
                                 <div class="col-md-6 ">
                                     <div class="detail-box">
                                         <h1>
-                                            Crypto <br>
-                                            Currency
+                                            Achieve Your <br>
+                                            Goals with Ease
                                         </h1>
                                         <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam
-                                            fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat
-                                            molestias, veniam, vel architecto veritatis delectus repellat modi impedit
-                                            sequi.
+                                            Set priorities and track progress effortlessly
                                         </p>
                                         <div class="btn-box">
                                             <a href="" class="btn1">
-                                                Read More
+                                                Sign Up Now
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="img-box">
-                                        <img src="{{ asset('fronts/images/image.png') }}" alt="">
+                                        <img src="{{ asset('fronts/images/image5.webp') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -222,25 +216,23 @@
                         Our <span>Services</span>
                     </h2>
                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration
+                        Discover tools to organize your workday, track productivity, and stay on top of your schedule. 
+                        Our platform is designed to enhance your efficiency and help you achieve your goals.
                     </p>
                 </div>
                 <div class="row">
                     <div class="col-md-4 ">
                         <div class="box ">
                             <div class="img-box">
-                                <img src="{{ asset('fronts/images/s1.png') }}" alt="">
+                                <img src="{{ asset('fronts/images/s5.png') }}" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
-                                    Currency Wallet
+                                    Time Management
                                 </h5>
                                 <p>
-                                    fact that a reader will be distracted by the readable content of a page when looking
-                                    at its layout.
-                                    The
-                                    point of using
+                                    Easily manage your work schedule with visual timelines and drag-and-drop features. 
+                                    Log tasks, set priorities, and allocate time slots to stay on track.
                                 </p>
                                 <a href="">
                                     Read More
@@ -251,17 +243,15 @@
                     <div class="col-md-4 ">
                         <div class="box ">
                             <div class="img-box">
-                                <img src="{{ asset('fronts/images/s2.png') }}" alt="">
+                                <img src="{{ asset('fronts/images/s4.png') }}" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
-                                    Security Storage
+                                    Weekly Reports
                                 </h5>
                                 <p>
-                                    fact that a reader will be distracted by the readable content of a page when looking
-                                    at its layout.
-                                    The
-                                    point of using
+                                    Receive detailed weekly reports on your productivity, highlighting work patterns and areas for improvement. 
+                                    enhance efficiency and achieve your goals.
                                 </p>
                                 <a href="">
                                     Read More
@@ -272,17 +262,15 @@
                     <div class="col-md-4 ">
                         <div class="box ">
                             <div class="img-box">
-                                <img src="{{ asset('fronts/images/s3.png') }}" alt="">
+                                <img src="{{ asset('fronts/images/s6.png') }}" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
-                                    Expert Support
+                                    Custom Alerts
                                 </h5>
                                 <p>
-                                    fact that a reader will be distracted by the readable content of a page when looking
-                                    at its layout.
-                                    The
-                                    point of using
+                                    Set up personalized notifications to receive timely reminders for important tasks and deadlines. 
+                                    Stay proactive and organized with our customizable alert system.
                                 </p>
                                 <a href="">
                                     Read More
@@ -291,11 +279,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn-box">
-                    <a href="">
-                        View All
-                    </a>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -307,39 +291,33 @@
 
     <section class="about_section layout_padding">
         <div class="container  ">
-            <div class="heading_container heading_center">
+            <div class="heading_container2 heading_center">
                 <h2>
                     About <span>Us</span>
                 </h2>
                 <p>
-                    Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum
-                    ipsum voluptatibus
+                
                 </p>
             </div>
             <div class="row">
                 <div class="col-md-6 ">
                     <div class="img-box">
-                        <img src="{{ asset('fronts/images/about-img.png') }}" alt="">
+                        <img src="{{ asset('fronts/images/image6.webp') }}" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="detail-box">
-                        <h3>
-                            We Are Finexo
+                        <h3 class="text-lg">
+                            We Are Lock-In
                         </h3>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration
-                            in some form, by injected humour, or randomised words which don't look even slightly
-                            believable. If you
-                            are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                            embarrassing hidden in
-                            the middle of text. All
+                            At our core, we are dedicated to creating a seamless experience for users to manage their daily tasks and long-term projects. 
+                            Our platform is designed with flexibility in mind, allowing you to tailor your time management strategies to fit your unique needs.
+                             Whether you're a student balancing coursework, a professional juggling multiple projects, or anyone striving to improve their productivity, our tools are here to support you every step of the way.
                         </p>
                         <p>
-                            Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem,
-                            possimus at iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis
-                            ullam ab omnis quasi expedita.
+                            Our commitment to excellence ensures that you have access to the latest and most effective strategies for staying organized and productive. 
+                            Join our community of motivated individuals and take the first step towards transforming your approach to time management.
                         </p>
                         <a href="">
                             Read More

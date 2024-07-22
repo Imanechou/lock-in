@@ -7,7 +7,7 @@ body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .layout_padding2 {
@@ -46,16 +46,40 @@ body {
 .heading_container h2 {
   position: relative;
   font-weight: bold;
-  margin-bottom: 0;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.heading_container2 h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.heading_container2 h2 span {
+  color: #00bbf0;
 }
 
 .heading_container h2 span {
   color: #00bbf0;
 }
 
+.heading_container2 p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
 .heading_container p {
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.heading_container2.heading_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .heading_container.heading_center {
@@ -94,6 +118,7 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+          background: #355070
 }
 
 .hero_area .hero_bg_box {
@@ -113,6 +138,7 @@ a:focus {
           align-items: flex-end;
   overflow: hidden;
   z-index: -1;
+  
 }
 
 .hero_area .hero_bg_box .bg_img_box {
@@ -135,7 +161,7 @@ a:focus {
 }
 
 .header_section {
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .header_section .container-fluid {
@@ -145,7 +171,7 @@ a:focus {
 
 .navbar-brand span {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 35px;
   color: #ffffff;
 }
 
@@ -483,7 +509,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #00204a;
+  background-color: #293241;
   color: #ffffff;
 }
 
@@ -503,10 +529,11 @@ a:focus {
 
 .about_section .detail-box h3 {
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .about_section .detail-box p {
-  margin-top: 15px;
+  margin-top:30px;
 }
 
 .about_section .detail-box a {
