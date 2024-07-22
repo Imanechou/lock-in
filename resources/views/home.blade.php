@@ -52,7 +52,7 @@
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
                     <a class="navbar-brand" href="index.html">
                         <span>
-                            Finexo
+                            Lock-In
                         </span>
                     </a>
 
@@ -63,33 +63,47 @@
                     </button>
 
 
-                    <div class="navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  ">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="about.html"> About</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="service.html">Services</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="why.html">Why Us</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="team.html">Team</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-                            </li>
-                            <form class="form-inline">
-                              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                              </button>
-                            </form>
-                          </ul>
-                    </div>
+
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+
+                        @if (Route::has('login'))
+                            <nav class="-mx-3 flex flex-1 justify-end">
+                                @auth
+                                <li class="nav-item">
+                                    <a href="{{ url('/dashboard') }}"
+                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+                                        Dashboard
+                                    </a>
+                                </li>
+                                @else
+                                <li class="nav-item">
+                                    <a href="{{ route('login') }}"
+                                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg px-6 py-1.5 text-center ms-3 me-2 ">
+                                        Log in
+                                    </a>
+                                </li>
+                                    @if (Route::has('register'))
+                                    <li class="nav-item">
+                                        <a href="{{ route('register') }}"
+                                            class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-lg px-3 py-1.5 text-center ms-3 me-2 ">
+                                            Register
+                                        </a>
+                                    </li>
+                                    @endif
+                                @endauth
+                            </nav>
+                        @endif
+                    </ul>
+
                 </nav>
             </div>
         </header>
@@ -104,25 +118,22 @@
                                 <div class="col-md-6 ">
                                     <div class="detail-box">
                                         <h1>
-                                            Crypto <br>
-                                            Currency
+                                            TIME IS <br>
+                                            Important
                                         </h1>
                                         <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam
-                                            fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat
-                                            molestias, veniam, vel architecto veritatis delectus repellat modi impedit
-                                            sequi.
+                                            for your big next step, so watch your steps
                                         </p>
                                         <div class="btn-box">
                                             <a href="" class="btn1">
-                                                Read More
+                                                Start Now
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="img-box">
-                                        <img src="{{ asset('fronts/images/slider-img.png') }}" alt="">
+                                        <img src="{{ asset('fronts/images/image.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +163,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="img-box">
-                                        <img src="{{ asset('fronts/images/slider-img.png') }}" alt="">
+                                        <img src="{{ asset('fronts/images/image.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +193,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="img-box">
-                                        <img src="{{ asset('fronts/images/slider-img.png') }}" alt="">
+                                        <img src="{{ asset('fronts/images/image.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
