@@ -802,7 +802,7 @@ a:focus {
 
 /* client section end */
 .info_section {
-  background-color: #00204a;
+  background-color: #355070;
   color: #ffffff;
   padding: 45px 0 15px 0;
 }
@@ -941,13 +941,11 @@ a:focus {
 /* footer section*/
 .footer_section {
   position: relative;
-  background-color: #ffffff;
   text-align: center;
 }
 
 .footer_section p {
-  color: #00204a;
-  padding: 25px 0;
+  color: white;
   margin: 0;
 }
 

@@ -234,9 +234,6 @@
                                     Easily manage your work schedule with visual timelines and drag-and-drop features. 
                                     Log tasks, set priorities, and allocate time slots to stay on track.
                                 </p>
-                                <a href="">
-                                    Read More
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -253,9 +250,7 @@
                                     Receive detailed weekly reports on your productivity, highlighting work patterns and areas for improvement. 
                                     enhance efficiency and achieve your goals.
                                 </p>
-                                <a href="">
-                                    Read More
-                                </a>
+                        
                             </div>
                         </div>
                     </div>
@@ -272,9 +267,7 @@
                                     Set up personalized notifications to receive timely reminders for important tasks and deadlines. 
                                     Stay proactive and organized with our customizable alert system.
                                 </p>
-                                <a href="">
-                                    Read More
-                                </a>
+                            
                             </div>
                         </div>
                     </div>
@@ -329,240 +322,6 @@
     </section>
 
     <!-- end about section -->
-
-    <!-- why section -->
-
-    <section class="why_section layout_padding">
-        <div class="container">
-            <div class="heading_container heading_center">
-                <h2>
-                    Why Choose <span>Us</span>
-                </h2>
-            </div>
-            <div class="why_container">
-                <div class="box">
-                    <div class="img-box">
-                        <img src="{{ asset('fronts/images/w1.png') }}" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            Expert Management
-                        </h5>
-                        <p>
-                            Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam
-                            numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In
-                            tempore voluptate ducimus officia id, aspernatur nihil.
-                            Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde
-                            reiciendis possimus animi autem natus
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="{{ asset('fronts/images/w2.png') }}" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            Secure Investment
-                        </h5>
-                        <p>
-                            Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam
-                            numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In
-                            tempore voluptate ducimus officia id, aspernatur nihil.
-                            Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde
-                            reiciendis possimus animi autem natus
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="{{ asset('fronts/images/w3.png') }}" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            Instant Trading
-                        </h5>
-                        <p>
-                            Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam
-                            numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In
-                            tempore voluptate ducimus officia id, aspernatur nihil.
-                            Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde
-                            reiciendis possimus animi autem natus
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img-box">
-                        <img src="{{ asset('fronts/images/w4.png') }}" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            Happy Customers
-                        </h5>
-                        <p>
-                            Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam
-                            numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In
-                            tempore voluptate ducimus officia id, aspernatur nihil.
-                            Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde
-                            reiciendis possimus animi autem natus
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-box">
-                <a href="">
-                    Read More
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- end why section -->
-
-    <!-- team section -->
-    <section class="team_section layout_padding">
-        <div class="container-fluid">
-            <div class="heading_container heading_center">
-                <h2 class="">
-                    Our <span> Team</span>
-                </h2>
-            </div>
-
-            <div class="team_container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{{ asset('fronts/images/team-1.jpg') }}" class="img1" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Joseph Brown
-                                </h5>
-                                <p>
-                                    Marketing Head
-                                </p>
-                            </div>
-                            <div class="social_box">
-                                <a href="#">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{{ asset('fronts/images/team-2.jpg') }}" class="img1" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Nancy White
-                                </h5>
-                                <p>
-                                    Marketing Head
-                                </p>
-                            </div>
-                            <div class="social_box">
-                                <a href="#">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{{ asset('fronts/images/team-3.jpg') }}" class="img1" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Earl Martinez
-                                </h5>
-                                <p>
-                                    Marketing Head
-                                </p>
-                            </div>
-                            <div class="social_box">
-                                <a href="#">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src="{{ asset('fronts/images/team-4.jpg') }}" class="img1" alt="">
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Josephine Allard
-                                </h5>
-                                <p>
-                                    Marketing Head
-                                </p>
-                            </div>
-                            <div class="social_box">
-                                <a href="#">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end team section -->
 
 
     <!-- client section -->
@@ -770,20 +529,15 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- end info section -->
-
-    <!-- footer section -->
-    <section class="footer_section">
-        <div class="container">
+        <div class="container footer_section">
             <p>
                 &copy; <span id="displayYear"></span> All Rights Reserved By
                 <a href="https://html.design/">Free Html Templates</a>
             </p>
         </div>
     </section>
-    <!-- footer section -->
+
+    <!-- end info section -->
 
     <!-- jQery -->
     <script type="text/javascript" src="{{ asset('fronts/js/jquery-3.4.1.min.js') }}"></script>
