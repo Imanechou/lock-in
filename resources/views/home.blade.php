@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <!-- Basic -->
@@ -19,93 +19,113 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('fronts/css/bootstrap.css') }}" />
 
     <!-- fonts style -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!--owl slider stylesheet -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
     <!-- font awesome style -->
-    <link href="{{ asset('fronts/css/font-awesome.min.css ') }}" rel="stylesheet" />
+    <link href="{{ asset('fronts/css/font-awesome.min.css') }}" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('fronts/css/style.css') }}" rel="stylesheet" />
     <!-- responsive style -->
     <link href="{{ asset('fronts/css/responsive.css') }}" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
     @vite('resources/css/app.css')
-
-    <!-- Bootstrap JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
+    <!-- Navbar section-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #355070">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span>
+                    Lock-In
+                </span>
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-white">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            Lock-In
+                        </span>
+                    </a>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul
+                        class="navbar-nav justify-content-center justify-content-lg-end align-items-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div class="butn d-flex flex-lg-row justify-content-center align-items-center gap-3">
+                        @if (Route::has('login'))
+                            
+                                @auth
+                                        <a href="{{ url('/dashboard') }}"
+                                            class="butn1">
+                                            Dashboard
+                                        </a>
+                                @else
+                                        <a href="{{ route('login') }}"
+                                            class="butn1 ">
+                                            Log in
+                                        </a>
+                                    
+                                    @if (Route::has('register'))
+                                        
+                                            <a href="{{ route('register') }}"
+                                                class="butn1">
+                                                Register
+                                            </a>
+                                        
+                                    @endif
+                                @endauth
+                            
+                        @endif
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar section-->
 
     <div class="hero_area">
-
-        <!--<div class="hero_bg_box">
+        <div class="hero_bg_box">
             <div class="bg_img_box">
-                <img src="{{ asset('fronts/images/hero-bg.png') }}" alt="">
+                <img src="images/hero-bg.png" alt="" />
             </div>
-        </div> -->
+        </div>
 
-        <!-- header section strats -->
-        <header class="header_section">
-            <div class="container-fluid">
-              <nav class="navbar navbar-expand-lg custom_nav-container">
-                <a class="navbar-brand" href="index.html">
-                  <span> Finexo </span>
-                </a>
-    
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class=""> </span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html"
-                        >Home <span class="sr-only">(current)</span></a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html"> About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="service.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="why.html">Why Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="team.html">Team</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        <i class="fa fa-user" aria-hidden="true"></i> Login</a
-                      >
-                    </li>
-                    <form class="form-inline">
-                      <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                      </button>
-                    </form>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </header>
-        <!-- end header section -->
         <!-- slider section -->
         <section class="slider_section ">
             <div id="customCarousel1" class="carousel slide" data-ride="carousel">
@@ -178,7 +198,7 @@
                                         </p>
                                         <div class="btn-box">
                                             <a href="" class="btn1">
-                                                Sign Up Now
+                                                Sign Up
                                             </a>
                                         </div>
                                     </div>
@@ -202,7 +222,6 @@
         </section>
         <!-- end slider section -->
     </div>
-
 
     <!-- service section -->
 
@@ -279,12 +298,11 @@
 
     <!-- end service section -->
 
-
     <!-- about section -->
 
     <section class="about_section layout_padding">
         <div class="container  ">
-            <div class="heading_container2 heading_center">
+            <div class="heading_container heading_center">
                 <h2>
                     About <span>Us</span>
                 </h2>
@@ -318,9 +336,11 @@
                             Join our community of motivated individuals and take the first step towards transforming
                             your approach to time management.
                         </p>
+
                         <a href="">
                             Read More
                         </a>
+
                     </div>
                 </div>
             </div>
@@ -329,7 +349,7 @@
 
     <!-- end about section -->
 
-    <!-- client section  -->
+    <!-- client section -->
 
     <section class="testimonials">
         <div class="container">
@@ -347,7 +367,7 @@
                             <div class="stars">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"s></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
@@ -407,8 +427,8 @@
             </div>
         </div>
     </section>
-    <!-- end client section  -->
 
+    <!-- end client section -->
 
     <!-- info section -->
 
@@ -421,8 +441,7 @@
                             Lock-In
                         </h4>
                         <p>
-                            necessary, making this the first true generator on the Internet. It uses a dictionary of
-                            over 200 Latin words, combined with a handful
+                            Lock-In helps you manage your time effectively and track your productivity. Join us to streamline your tasks and achieve your goals
                         </p>
                     </div>
                 </div>
@@ -456,19 +475,19 @@
                     </form>
                 </div>
             </div>
-            <hr>
         </div>
-
         <div class="container footer_section">
             <p>
-                &copy; <span id="displayYear"></span> All Rights Reserved By
-                <a href="https://html.design/">Free Html Templates</a>
+                &copy; <span id="displayYear"></span> All Rights Reserved By Lock-In
             </p>
         </div>
-
     </section>
 
     <!-- end info section -->
+
+
+
+
 
     <!-- jQery -->
     <script type="text/javascript" src="{{ asset('fronts/js/jquery-3.4.1.min.js') }}"></script>
@@ -487,11 +506,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
     </script>
     <!-- End Google Map -->
-
-
     @vite('resources/js/app.js')
-
 </body>
-
 
 </html>
